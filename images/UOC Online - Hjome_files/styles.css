@@ -1,0 +1,26 @@
+.header {
+  margin-top: 0;
+  height: 15%;
+  width: 15%;
+}
+
+h1 {
+  color: yellow;
+  font-size: 5em;
+  font-family: "Sofia", cursive;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: black;
+}
+
+header {
+  align-items: center;
+}
