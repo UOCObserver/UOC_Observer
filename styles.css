@@ -1,0 +1,256 @@
+/* Remove default margin and padding from body and html */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height of the page */
+}
+
+/* Make sure the navbar has proper z-index so it stays above the image */
+.navbar {
+  z-index: 1;
+  position: relative;
+}
+
+/* Background image settings */
+.background-image {
+  position: absolute;
+  top: 56px; /* Push the image just below the navbar */
+  left: 0;
+  width: 100vw; /* Use viewport width for full screen width */
+  height: calc(100vh - 56px); /* Fill the rest of the screen below the navbar */
+  object-fit: cover; /* Ensure the image covers the space */
+  opacity: 0.75; /* Set image transparency */
+  z-index: -1; /* Place the image behind the content */
+}
+
+.background-image img {
+  width: 100%; /* Ensure the image stretches to the full width */
+  object-fit: cover; /* Ensure it covers the space without distortion */
+}
+
+/* Header styling */
+header {
+  background-color: #201e43;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.header_img {
+  margin-top: 0;
+  height: 15%;
+  width: 15%;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: #e2e2b6;
+  font-size: 5em;
+  font-family: "Sofia", cursive;
+}
+
+h5 {
+  color: #508c9b;
+  font-family: "Lilita One", sans-serif;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: "Lilita One", sans-serif;
+  padding-top: 1em;
+}
+
+/* Customize navbar */
+.navbar {
+  background-color: black;
+}
+
+.home {
+  text-decoration: none;
+}
+
+.eds_message {
+  text-align: center;
+  font-family: montserrat;
+}
+
+.ed {
+  height: 35%;
+  width: 35%;
+}
+
+.story-section {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.95
+  ); /* subtle background for readability */
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+.story-section h2 {
+  font-family: "Lilita One", sans-serif;
+  color: #201e43;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.story-section h4 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.story-section p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    /* Resize header text */
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h5 {
+      font-size: 1.2em;
+    }
+
+    /* Resize header image */
+    .header_img {
+      width: 40%;
+      height: auto;
+    }
+
+    /* Make nav items stack if needed (optional) */
+    .navbar-nav {
+      text-align: center;
+    }
+
+    /* Tweak padding and font size in story */
+    .story-section {
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    .story-section p {
+      font-size: 1rem;
+    }
+
+    /* Optional: reduce image size in story */
+    .img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .story-section p {
+    font-size: 1rem;
+  }
+}
+
+.img {
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.terry-img {
+  width: 200px;
+  height: 300px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+}
+
+.construct {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-button {
+  font-family: "Lilita One", cursive;
+  font-size: 1.3rem;
+  background-color: #f8f9fa;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #444;
+}
+
+.accordion-body a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #f9c000;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ffd84f;
+  transform: scale(1.05);
+}
+
+button.btn-warning {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 0 0 12px rgba(255, 194, 0, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
